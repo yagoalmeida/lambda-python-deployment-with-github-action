@@ -1,6 +1,6 @@
 name: lambda-python-deployment-with-github-action
 
-on: [ push ]:
+on:
   workflow_call:
     inputs:
       AWS_DEFAULT_REGION:
