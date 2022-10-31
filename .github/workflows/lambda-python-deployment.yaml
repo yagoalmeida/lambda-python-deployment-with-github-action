@@ -60,7 +60,7 @@ jobs:
         run: zip -g $file_name_zip -r . -x '*.git*' -x '*.pytest*' -x '*tests*'
 
       - name: Upload zip file artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: code-lambda
           path: code-lambda.zip
